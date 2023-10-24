@@ -1,0 +1,9 @@
+.label_ {
+  color: rgb(19, 53, 86);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
