@@ -29,9 +29,10 @@ export class PostForm extends Component {
                 onChange={this.handleChange}
                 pattern="^[a-zA-Z]+(([' \-][a-zA-Z])?[a-zA-Z]*)*$"
                 required
+                className={css.postFormInput}
             />
         </label>
-        <label>Phone
+        <label className={css.label}>Phone
             <input
                 type="tel"
                 name="phone"
@@ -41,6 +42,7 @@ export class PostForm extends Component {
                 max-length="12"
                 placeholder='380123456789'  
                 required 
+                className={css.postFormInput}
             />
         </label>
         <button type="submit">Add contact</button>

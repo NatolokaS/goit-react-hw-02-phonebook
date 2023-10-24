@@ -1,10 +1,10 @@
 import css from './ContactsItem.module.css';
 export const ContactsItem = ({contact, del}) =>{
 	return(
-		<li className={css.contactsItem} >
-			<span>{contact.name}:</span>
-	 		<span className={css.telephone}>{contact.phone}</span>
-	 		<button type="button" className={css.deleteButton} onClick={del}>Delete</button>
-	 	</li>
+		<ul className={css.contactsItem} >
+			<li>{contact.name}:</li>
+	 		<li className={css.telephone}>{contact.phone}</li>
+	 		<li><button type="button" className={css.deleteButton} onClick={del}>Delete</button></li>
+	 	</ul>
 	)
 }
